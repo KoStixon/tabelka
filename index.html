@@ -3,28 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela</title>
 </head>
+<style>
+    table {
+        border: 1px solid black;
+        width: 600px;
+        height: 300px;
+        border-collapse: collapse;
+        margin: 50px auto;
+        text-align: center;
+    }
+    th, tr, td{
+        padding: 8px;
+        border: 1px solid black;
+    }
+    tr.obramowka {
+        background-color: aqua;
+        height: 8%;
+    }
+    th.obramowka {
+        background-color: aqua;
+        width: 8%;
+    }
+    td.wyrownanie{
+        width: 18.4%;
+    }
+    .kolor1 {
+        background-color: rgba(47, 79, 79, .5);
+    }
+    .kolor2 {
+        background-color: rgba(85, 107, 47, .5);
+    }
+    .kolor3{
+        background-color: rgba(0, 100, 0, .5);
+    }
+</style>
 <body>
     <table>
-        <tr>
-        <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        <tr class="obramowka">
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
         </tr>
         <tr>
-        <th>2</th> <td>a</td> <td colspan="2">b, c</td> <td>d</td> <td>e</td>
+            <th class="obramowka">2</th> <th>a</th> <th class="kolor1">b</th> <th class="kolor1">c</th> <th>d</th> <th>e</th>
         </tr>
         <tr>
-        <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td rowspan="2">j, o</td>
+            <th class="obramowka">3</th> <th>f</th> <th>g</th> <th>h</th> <th>i</th> <th class="kolor2">j</th>
         </tr>
         <tr>
-        <th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td>
+            <th class="obramowka">4</th> <th>k</th> <th>l</th> <th>m</th> <th>n</th> <th class="kolor2">o</th>
         </tr>
         <tr>
-        <th>5</th> <td colspan="3" rowspan="2">p, q, r, u, v, w</td> <td>s</td> <td>t</td>
+            <th class="obramowka">5</th> <th class="kolor3">p</th> <th class="kolor3">q</th> <th class="kolor3">r</th> <th>s</th> <th>t</th>
         </tr>
         <tr>
-        <th>6</th> <td>y</td> <td>z</td>
+            <th class="obramowka">6</th> <th class="kolor3">u</th> <th class="kolor3">v</th> <th class="kolor3">w</th> <th>y</th> <th>z</th>
+        </tr>        
+    </table>
+    <table>
+        <tr class="obramowka">
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
         </tr>
-        </table>
+        <tr>
+            <th class="obramowka">2</th> <th>a</th> <td colspan="2" class="kolor1">b, c</td> <th>d</th> <th>e</th>
+        </tr>
+        <tr>
+            <th class="obramowka">3</th> <th>f</th> <th>g</th> <th>h</th> <th>i</th> <td rowspan="2" class="kolor2 wyrownanie">j, o</td>
+        </tr>
+        <tr>
+            <th class="obramowka">4</th> <th>k</th> <th>l</th> <th>m</th> <th>n</th>
+        </tr>
+        <tr>
+            <th class="obramowka">5</th> <td colspan="3" rowspan="2" class="kolor3">p, q, r, u, v, w</td> <th>s</th> <th>t</th>
+        </tr>
+        <tr>
+            <th class="obramowka">6</th>  <th>y</th> <th>z</th>
+        </tr>        
+    </table>
+    <table>
+        <tr class="obramowka">
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th class="obramowka">2</th> <th>a</th> <th>b</th> <th>c</th> <th>d</th> <th>e</th>
+        </tr>
+        <tr>
+            <th class="obramowka">3</th> <th>f</th> <th>g</th> <th>h</th> <th>i</th> <th>j</th>
+        </tr>
+        <tr>
+            <th class="obramowka">4</th> <td rowspan="2" class="kolor2 wyrownanie">k, p</td> <th>l</th> <th>m</th> <th>n</th> <th>o</th>
+        </tr>
+        <tr>
+            <th class="obramowka">5</th> <th>q</th> <th>r</th> <th>s</th> <th>t</th>
+        </tr>
+        <tr>
+            <th class="obramowka">6</th> <th>u</th> <th>v</th> <th>w</th> <th>y</th> <th>z</th>
+        </tr>        
+    </table>
 </body>
 </html>
